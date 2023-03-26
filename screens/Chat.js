@@ -9,7 +9,7 @@ import { GiftedChat } from 'react-native-gifted-chat';
 import {
     collection,
     addDoc,
-    orderBy,
+    orderBy, 
     query,
     onSnapshot
 } from 'firebase/firestore';
@@ -73,7 +73,7 @@ export default function Chat() {
             _id,
             createdAt,
             text,
-            user
+            user,
         });
     }, []);
 
@@ -100,5 +100,5 @@ export default function Chat() {
                 avatar: 'https://i.pravatar.cc/300'
             }}
         />
-    );
+    ); 
 }
